@@ -1,0 +1,9 @@
+<section class="detail">
+    <h2>{{ title }}</h2>
+
+    <div class="singleDisplay" *ngIf="pokemonToDisplay">
+        <h3>{{ pokemonToDisplay.name }}</h3>
+        <img [src]="pokemonToDisplay.url" alt="{{pokemonToDisplay.name}}" />
+        <p>{{ pokemonToDisplay.description }}</p>
+    </div>
+</section>

@@ -1,0 +1,23 @@
+<section class="create">
+    <form (submit)="myForm.valid && add(pokemon)" #myForm="ngForm">
+        <label for="name">Name :</label>
+        <input [(ngModel)]="pokemon.name" type="text" name="name" required #nameRef="ngModel">
+        <div *ngIf="myForm.submitted && nameRef.errors && nameRef.errors.required">
+            <span class="error">Le nom est requis</span>
+        </div>
+
+        <label for="image">Image Url :</label>
+        <input [(ngModel)]="pokemon.url" type="text" name="image" #urlRef="ngModel" required>
+        <div *ngIf="myForm.submitted && urlRef.errors && urlRef.errors.required">
+            <span class="error">Le lien de l'image est requis</span>
+        </div>
+
+        <label for="description">Description :</label>
+        <input [(ngModel)]="pokemon.description" type="text" name="description" #descriptionRef="ngModel" required>
+        <div  *ngIf="myForm.submitted && descriptionRef.errors && descriptionRef.errors.required">
+            <span class="error">Une description serait la bienvenue</span>
+        </div>
+
+        <button>Ajouter</button>
+    </form>
+</section>

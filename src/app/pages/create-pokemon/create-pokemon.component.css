@@ -1,0 +1,22 @@
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+}
+
+.create {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.error {
+    font-size: 10px;
+    color: red;
+}
+
+button {
+    margin-top: 15px;
+}

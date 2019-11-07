@@ -1,0 +1,30 @@
+.detail {
+    width: 300px;
+}
+
+.detail h2 {
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.singleDisplay {
+    -webkit-border-radius: 0 0 15px 15px;
+    border-radius: 0 0 15px 15px;
+    border: 1px solid black;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.singleDisplay h3 {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-top: 0;
+}
+
+
+
+
+

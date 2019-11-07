@@ -1,0 +1,4 @@
+<div class="page">
+    <app-pokemon-list [pokemonAAfficher]="tableauDepokemons" (pokemonEvent)="onPokemonSelected($event)"></app-pokemon-list>
+    <app-pokemon-detail [pokemonToDisplay]="pokemonDetail"></app-pokemon-detail>
+</div>
